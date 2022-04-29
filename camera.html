@@ -8,8 +8,8 @@
 </head>
 <body>
 <input type="button" title="开启摄像头" value="开启摄像头" onclick="getMedia()" />
-<video id="video" width="500px" height="500px" autoplay="autoplay"></video>
-<canvas id="canvas" width="500px" height="500px"></canvas>
+<video id="video" width="100px" height="100px" autoplay="autoplay"></video>
+<canvas id="canvas" width="100px" height="100px"></canvas>
 <button id="snap" onclick="takePhoto()">拍照</button>
 <button id="close" onclick="closeMedia()">关闭</button>
 <button id="upload" onclick="uploadImage('a.png')">上传</button>
@@ -29,7 +29,7 @@
     let video = document.getElementById("video");
     function getMedia() {
         let constraints = {
-            video: {width: 500, height: 500},
+            video: {width: 100, height: 100},
             audio: true
         };
         /*
@@ -51,7 +51,7 @@
         //获得Canvas对象
         let canvas = document.getElementById("canvas");
         let ctx = canvas.getContext('2d');
-        ctx.drawImage(video, 0, 0, 500, 500);
+        ctx.drawImage(video, 0, 0, 100, 100);
     }
     //图片上传到服务器
     //获取Canvas的编码
